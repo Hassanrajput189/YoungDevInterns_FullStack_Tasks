@@ -1,9 +1,9 @@
 import React from 'react';
 
-const University = () => {
+const Sustainability = () => {
   return (
-    <div className='University'>
-      <div className="dropDownMenu">University</div>
+    <div className='Sustainability'>
+      <div className="dropDownMenu">Sustainability</div>
       <ul className='dropDownMenuList'>
         <li>Option 1</li>
         <li>Option 2</li>
@@ -20,4 +20,4 @@ const University = () => {
   );
 }
 
-export default University;
+export default Sustainability;
