@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+
+.upperNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 250px;
+}
+.muetLogo{
+  padding-top: 10px;
+}
+.searchBar {
+  background: #eee;
+  border-radius: 5px;
+  padding: 16px 18px;
+}
+
+.quickLinks {
+  background: #eee;
+  color: #2e75a4;
+  padding: 2px;
+  padding-right: 100px;
+}
+
+.searchAndLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 18px;
+}
+
+.dropDownMenu {
+  padding: 6px 12px;
+  color: #1b4d70;
+  font-weight: bold;
+  background: hsl(0, 0%, 88%);
+  border-radius: 8px;
+  font-weight: bolder;
+
+}
+
+.dropDownMenuList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  margin: 4px 0px;
+  list-style: none;
+  background: #1a85c7;
+  padding: 10px;
+  visibility: hidden; 
+  position: absolute; 
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 10;
+}
+.dropDownMenu:hover{
+  color: white;
+  background: #1a85c7;
+}
+.dropDownMenu:hover + .dropDownMenuList {
+  visibility: visible; /* Show when hover occurs */
+  opacity: 1; /* Make it visible */
+  
+}
+
+.lowerNav {
+  
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.navFooter{
+  background:#2e75a4;;
+  padding:12px;
+  width: 100vw;
+  margin: 2px;
+  box-shadow: 0px 20px 0px 20px #e9f4f8;
+}
+#main{
+  border: 2px solid black;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainContent {
+  width: 50vw; /* Retain the existing width */
+  overflow: hidden; /* Prevent overflow */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.largeImg {
+  width: 100%; /* Take full width of the parent container */
+  height:auto; /* Adjust height dynamically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.largeImg img {
+  width: 100%; /* Image fills the full width of the `.largeImg` container */
+  object-fit: cover; /*Ensure image fills without distortion */
+}
+
+
+
+
+.prev, .next {
+  position: absolute; /* Position relative to `.largeImg` */
+  top: 50%; /* Vertically center the arrows */
+  transform: translateY(-50%); /* Adjust centering */
+  cursor: pointer; /* Add a pointer cursor for better UX */
+  filter: brightness(0) saturate(100%) invert(91%) sepia(6%) saturate(5%) hue-rotate(210deg) brightness(96%) contrast(88%); 
+}
+
+.prev {
+  left: 10px; /* Adjust spacing from the left edge */
+}
+
+.next {
+  right: 10px; /* Adjust spacing from the right edge */
+}
+
+.prev img , .next img{
+  width: 30px;
+}
+#footer {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  margin: 20px auto;
+}
+
+#footer > hr {
+  margin: 20px auto; 
+  width: 90%; 
+  border: 1px solid #ccc;  
+}
+.notifications{  
+  width: inherit;
+  background: #fcfdff;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px 25px 0px;
+  padding: 8px;
+}
+
+.notifications > div:first-child{
+  display: flex;
+  gap: 10px;
+}
+
+.notifications > div:first-child > span:first-child {
+  padding-left: 10px;
+  color: #ca2950;
+}
+.viewAll{
+  padding-right:10px ; 
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.cardContainerOne, .cardContainerTwo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  height: 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.card > * {
+  width: 100%;
+}
+
+.title {
+  background: #22adb8;
+  color: white;
+  padding: 6px;
+  font-size: 18px;
+  
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.desc {
+  color: #666;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.links {
+  padding: 10px;
+  width: 100%;
+}
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 10px;
+}
+
+.links li, .viewAll , .notifications div > span:nth-child(2){
+  font-size: 14px;
+  color: #22adb8;
+  cursor: pointer;
+}
