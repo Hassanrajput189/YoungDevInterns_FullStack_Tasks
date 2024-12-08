@@ -206,11 +206,10 @@ nav {
 }
 
 .title {
-  background: #22adb8;
   color: white;
-  padding: 6px;
-  font-size: 18px;
-  
+  padding: 4px;
+  font-size: 16px;
+  font-family: poppins;
 }
 
 .image {

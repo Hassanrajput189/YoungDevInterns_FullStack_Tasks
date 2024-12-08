@@ -26,19 +26,22 @@ const Main: React.FC = () => {
         </div>
         <div className="cardContainerOne">
         <Card  
-          title = "Gender Equality"
+          title = "GENDER EQUALITY"
+          titleColor= "#22adb8"
           image = "cardImage(1).png"
           desc={desc1}
           links={links}
           />
           <Card  
-          title = "Gender Equality"
+          title = "VICE CHANCELLOR's MESSAGE"
+          titleColor= "#b8224a"
           image = "cardImage(2).png"
           desc={desc2}
           links={links}
           />
           <Card  
-          title = "Gender Equality"
+          title = "GENDER EQUALITY"
+          titleColor= "#22adb8"
           image = "cardImage(1).png"
           desc={desc1}
           links={links}
@@ -48,19 +51,22 @@ const Main: React.FC = () => {
         </div>
         <div className="cardContainerTwo">
         <Card  
-          title = "Gender Equality"
+          title = "STUDENT FINANCIAL AID OFFICE"
+          titleColor= "#b8224a"
           image = "cardImage(3).png"
           desc={desc3}
           links={links}
           />
           <Card  
-          title = "Gender Equality"
+          title = "QUALITY ENHANCEMENT CELL"
+          titleColor= "#6bdf3b"
           image = "cardImage(4).png"
           desc={desc4}
           links={links}
           />
           <Card  
-          title = "Gender Equality"
+          title = "NEWSLETTER VOL-VII, ISSUE-I"
+          titleColor= "#22adb8"
           image = "cardImage(5).png"
           desc={desc5}
           links={links}
