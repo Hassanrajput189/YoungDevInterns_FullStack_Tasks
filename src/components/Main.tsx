@@ -4,6 +4,7 @@ import SmallImgCard from './SmallImgCard';
 import Card from './Card';
 import NewsAndEvents from './NewsAndEvents';
 import QuickInfo from './QuickInfo';
+import BottomImages from './BottomImages';
 
 const Main: React.FC = () => {
   let desc1 = "Gender issues are central to the achievement of strategic plans and Assistance Objectives (AO), and MUET along with USAID strives to promote gender equality, in which both men and women have equal opportunity to benefit from and contribute to economic, social, cultural, and political development; enjoy socially valued resources and rewards; and realize their human rights."
@@ -15,14 +16,14 @@ const Main: React.FC = () => {
   let links = ["Gender Equity (USPCAS-W)", "MUET Gender Policy Statement" , "Harassment Complaint Cell"];
   return (
     <div id="main">
-      <div className="mainContent">
+      <div id="mainContent">
         <LargeImgCard />
         <div className="notifications">
           <div>
             <span>NOTIFICATIONS</span>
             <span>This is a temporary message</span>
           </div>
-          <div className="viewAll">View All</div>
+          <div >View All</div>
         </div>
         <div className="cardContainerOne">
         <Card  
@@ -38,16 +39,8 @@ const Main: React.FC = () => {
           image = "cardImage(2).png"
           desc={desc2}
           links={links}
-          />
-          <Card  
-          title = "GENDER EQUALITY"
-          titleColor= "#22adb8"
-          image = "cardImage(1).png"
-          desc={desc1}
-          links={links}
-          />
-  
-          <NewsAndEvents />
+          />  
+          <NewsAndEvents title = "NEWS & EVENTS" titleColor='#ffa500' image ="/MUET_news_image.png"/>
         </div>
         <div className="cardContainerTwo">
         <Card  
@@ -81,6 +74,14 @@ const Main: React.FC = () => {
         <div className="quickInfo">
           <QuickInfo />
         </div>
+      </div>
+      <div id='bottomContent'>
+        <BottomImages 
+        image1='/bottomImage(1).png' 
+        image2='/bottomImage(2).png'
+        image3='/bottomImage(3).png' 
+        image4='/bottomImage(4).png'
+        />
       </div>
     </div>
   );

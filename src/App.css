@@ -76,7 +76,6 @@ nav {
 }
 
 .lowerNav {
-  
   margin-top: 20px;
   display: flex;
   gap: 10px;
@@ -96,7 +95,7 @@ nav {
   justify-content: center;
   align-items: center;
 }
-.mainContent {
+#mainContent {
   width: 50vw; /* Retain the existing width */
   overflow: hidden; /* Prevent overflow */
   display: flex;
@@ -175,7 +174,7 @@ nav {
   padding-left: 10px;
   color: #ca2950;
 }
-.viewAll{
+.notifications > div:nth-child(2){
   padding-right:10px ; 
 }
 * {
@@ -242,8 +241,39 @@ nav {
   padding-left: 10px;
 }
 
-.links li, .viewAll , .notifications div > span:nth-child(2){
+.links li, .notifications > div:nth-child(2) , .notifications div > span:nth-child(2){
   font-size: 14px;
   color: #22adb8;
   cursor: pointer;
+}
+ #newsAndEvents {
+  height: 400px;
+  width: 300px;
+  position: relative; /* Make the container a positioning context */
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 10px 10px 20px 10px;
+}
+
+
+.viewAll {
+  position: absolute; /* Position relative to the parent */
+  bottom: 0;          /* Align to the bottom */
+  width: 100%;        /* Take the full width of the parent */
+  text-align: end;
+  padding: 4px;
+  margin-bottom: 15px;
+  background: #eeeeee;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+}
+#bottomImages{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
