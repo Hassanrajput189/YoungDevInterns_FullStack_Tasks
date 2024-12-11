@@ -1,13 +1,9 @@
 import React from 'react'
-import University from './University'
-import Academics from './Academics'
-import Admissions from './Admissions'
-import Departments from './Departments'
-import Institutes from './Institutes'
-import Directorates from './Directorates'
-import Research from './Research'
-import Sustainability from './Sustainability'
+import DropDownComponent from './DropDownComponent'
 const Navbar: React.FC = () => {
+  let options = 
+  ["option 1", "option 2" , "option 3" , 
+    "option 4","option 5" , "option 6"]
   return (
     <div>
       <nav>
@@ -19,14 +15,22 @@ const Navbar: React.FC = () => {
         </div>
       </div>
       <div className='lowerNav'>
-        <University/>
-        <Academics/>
-        <Admissions/>
-        <Departments/>
-        <Institutes/>
-        <Directorates/>
-        <Research/>
-        <Sustainability/>
+        {/* <University/> */}
+        <DropDownComponent name='University' options={options}/>
+        {/* <Academics/> */}
+        <DropDownComponent name='Academics' options={options}/>
+        {/* <Admissions/> */}
+        <DropDownComponent name='Admissions' options={options}/>
+        {/* <Departments/> */}
+        <DropDownComponent name='Departments' options={options}/>
+        {/* <Institutes/> */}
+        <DropDownComponent name='Institutes' options={options}/>
+        {/* <Directorates/> */}
+        <DropDownComponent name='Directorates' options={options}/>
+        {/* <Research/> */}
+        <DropDownComponent name='Research' options={options}/>
+        {/* <Sustainability/> */}
+        <DropDownComponent name='Sustainabilitity' options={options}/>
       </div>
       <div className="navFooter"></div>
       </nav>
