@@ -1,9 +1,9 @@
 import React from 'react';
-import LargeImgCard from './LargeImgCard';
-import SmallImgCard from './SmallImgCard';
+import LargeImgCard from './LargeImg';
+import Notifications from './Notifications';
 import Card from './Card';
 import NewsAndEvents from './NewsAndEvents';
-import QuickInfo from './QuickInfo';
+import QuickInfo from './QuickLinks';
 import BottomImages from './BottomImages';
 
 const Main: React.FC = () => {
@@ -18,13 +18,7 @@ const Main: React.FC = () => {
     <div id="main">
       <div id="mainContent">
         <LargeImgCard />
-        <div className="notifications">
-          <div>
-            <span>NOTIFICATIONS</span>
-            <span>This is a temporary message</span>
-          </div>
-          <div >View All</div>
-        </div>
+        <Notifications message = "this is a temporary message"/>
         <div className="cardContainerOne">
         <Card  
           title = "GENDER EQUALITY"
@@ -39,7 +33,7 @@ const Main: React.FC = () => {
           image = "cardImage(2).png"
           desc={desc2}
           links={links}
-          />  
+          />
           <NewsAndEvents title = "NEWS & EVENTS" titleColor='#ffa500' image ="/MUET_news_image.png"/>
         </div>
         <div className="cardContainerTwo">
@@ -64,15 +58,6 @@ const Main: React.FC = () => {
           desc={desc5}
           links={links}
           />
-          
-        </div>
-        <div className="smallImages">
-          <SmallImgCard />
-          <SmallImgCard />
-          <SmallImgCard />
-        </div>
-        <div className="quickInfo">
-          <QuickInfo />
         </div>
       </div>
       <div id='bottomContent'>
@@ -82,6 +67,9 @@ const Main: React.FC = () => {
         image3='/bottomImage(3).png' 
         image4='/bottomImage(4).png'
         />
+        
+        <QuickInfo />
+        
       </div>
     </div>
   );

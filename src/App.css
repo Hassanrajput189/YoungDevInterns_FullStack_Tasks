@@ -1,7 +1,9 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 
 nav {
   display: flex;
@@ -156,7 +158,7 @@ nav {
   width: 90%; 
   border: 1px solid #ccc;  
 }
-.notifications{  
+#notifications{  
   width: inherit;
   background: #fcfdff;
   display: flex;
@@ -165,22 +167,17 @@ nav {
   padding: 8px;
 }
 
-.notifications > div:first-child{
+#notifications > div:first-child{
   display: flex;
   gap: 10px;
 }
 
-.notifications > div:first-child > span:first-child {
+#notifications > div:first-child > span:first-child {
   padding-left: 10px;
   color: #ca2950;
 }
-.notifications > div:nth-child(2){
+#notifications > div:nth-child(2){
   padding-right:10px ; 
-}
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 .cardContainerOne, .cardContainerTwo {
@@ -271,6 +268,9 @@ nav {
   font-family: Poppins, sans-serif;
   font-size: 12px;
 }
+#bottomContent{
+  width: 50vw;  
+}
 #bottomImages {
   display: flex;
   justify-content: center;
@@ -294,6 +294,36 @@ nav {
 
 #bottomImages > div:hover {
   padding: 3px; 
+}
+
+#quickLinks {
+ margin-top: 55px; 
+}
+.firstRow, .secondRow, .thirdRow, .fourthRow, .fifthRow{ 
+  width: 100%;
+  display: grid;
+  grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+  font-family: poppins;
+}
+#quickLinks > div > div{
+  padding: 10px;
+  text-align: center;
+  border: 2px solid black;
+}
+.firstRow{
+  color: #b8224a;
+  font-size: 19px;
+  font-weight: 600;
+}
+.secondRow , .thirdRow , .fourthRow ,.fifthRow{
+  font-size: 12px;
+  font-family: poppins;
+}
+.heading{
+  margin-top: 55px;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid black;
 }
 
 
