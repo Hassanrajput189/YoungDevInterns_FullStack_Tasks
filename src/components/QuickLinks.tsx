@@ -3,6 +3,7 @@ import React from 'react'
 const QuickInfo = () => {
   return (
     <div id = "quickLinks">
+      <div>
       <div className='firstRow'>
         <div>Research</div>      
         <div>Links</div>
@@ -25,13 +26,20 @@ const QuickInfo = () => {
         <div>Address: Mehran University of Engineering & Technology,<br/>
         Jamshoro, 76062, Sindh, Pakistan</div>
       </div>
-      <div className = "heading">Facebook Pages</div>
+    </div>
+    <div>
+      <div className = "heading">
+        <img src="/favicon.ico" alt="facebook pages" />
+        <div>Facebook Pages</div>
+        </div>
       <div className='fifthRow'>
         <div>International Conferences</div>      
         <div>Anti-Plagiarism Service</div>
         <div>Address: Mehran University of Engineering & Technology,<br/>
         Jamshoro, 76062, Sindh, Pakistan</div>
       </div>
+    </div>
+    <div className="note">*MUET is not responsible for any misinformation on these facebook pages.</div>
     </div>
   )
 }

@@ -7,7 +7,7 @@ const Notifications: React.FC<{ message: string }> = (props) => {
         <span>NOTIFICATIONS</span>
         <span>{props.message}</span>
       </div>
-      <div>View All</div>
+      <div>View all</div>
     </div>
   );
 };

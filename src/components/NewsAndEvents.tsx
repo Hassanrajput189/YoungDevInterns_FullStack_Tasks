@@ -12,15 +12,15 @@ const NewsAndEvents:React.FC<propInterface> = (props) => {
       <div className="title" style={{ background: props.titleColor }}>
         {props.title}
       </div>
-      <div className='flex'>
+      <div className='newsEventsflex'>
         <img src={props.image} alt="MUET News" />
         <div>this is a link</div>
       </div>
-        <div className='flex'>
+        <div className='newsEventsflex'>
         <img src={props.image} alt="MUET News" />
       <div>this is a link</div>
       </div>
-      <div className='flex'>
+      <div className='newsEventsflex'>
         <img src={props.image} alt="MUET News" />
         <div>this is a link</div>
       </div>

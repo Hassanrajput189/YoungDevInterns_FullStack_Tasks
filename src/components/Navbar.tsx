@@ -5,32 +5,32 @@ const Navbar: React.FC = () => {
   ["option 1", "option 2" , "option 3" , 
     "option 4","option 5" , "option 6"]
   return (
-    <div>
+    <div id='nav' className='flex'>
       <nav>
       <div className='upperNav'>
         <span className="muetLogo"><img src="muet_logo.png" alt="" /></span>
-        <div className='searchAndLinks'>
-        <span className="searchBar"> <input type="text" /> Search</span>
+        <div className='searchAndLinks '>
+        <span className="searchBar flex"> <input type="text" /> Search</span>
         <span className="quickLinks">Quick Links</span>
         </div>
       </div>
       <div className='lowerNav'>
         {/* <University/> */}
-        <DropDownComponent name='University' options={options}/>
+        <DropDownComponent name='UNIVERSITY' options={options}/>
         {/* <Academics/> */}
-        <DropDownComponent name='Academics' options={options}/>
+        <DropDownComponent name='ACADEMICS' options={options}/>
         {/* <Admissions/> */}
-        <DropDownComponent name='Admissions' options={options}/>
+        <DropDownComponent name='ADMISSIONS' options={options}/>
         {/* <Departments/> */}
-        <DropDownComponent name='Departments' options={options}/>
+        <DropDownComponent name='DEPARTMENTS' options={options}/>
         {/* <Institutes/> */}
-        <DropDownComponent name='Institutes' options={options}/>
+        <DropDownComponent name='INSTITUTES' options={options}/>
         {/* <Directorates/> */}
-        <DropDownComponent name='Directorates' options={options}/>
+        <DropDownComponent name='DIRECTORATES' options={options}/>
         {/* <Research/> */}
-        <DropDownComponent name='Research' options={options}/>
+        <DropDownComponent name='RESEARCH' options={options}/>
         {/* <Sustainability/> */}
-        <DropDownComponent name='Sustainabilitity' options={options}/>
+        <DropDownComponent name='SUSTAINABILITY' options={options}/>
       </div>
       <div className="navFooter"></div>
       </nav>
