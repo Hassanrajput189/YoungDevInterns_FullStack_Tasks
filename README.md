@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 # YoungDevInterns_FullStack_Tasks
-This is the repository for my first internship task at YoungDev. This includes couple of full stack projects that I created during my on Month intenshipt
+This is the repository for my first internship task at YoungDev. This includes a Basic full stack projects that was one of the project that I created during my one Month intenship
 =======
 # React + TypeScript + Vite
 
