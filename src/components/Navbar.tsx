@@ -8,12 +8,15 @@ const Navbar: React.FC = () => {
     <div id='nav' className='flex'>
       <nav>
       <div className='upperNav'>
-        <span className="muetLogo"><img src="muet_logo.png" alt="" /></span>
+        <div className="muetLogo"><img src="muet_logo.png" alt="MUET logo" /></div>
         <div className='searchAndLinks '>
-        <span className="searchBar flex"> <input type="text" /> Search</span>
-        <span className="quickLinks">Quick Links</span>
+        <div className="searchBar flex"> <input type="text" />
+          <p>Search</p>
+        </div>
+        <div className="quickLinks">— Quick Links —</div>
         </div>
       </div>
+      
       <div className='lowerNav'>
         {/* <University/> */}
         <DropDownComponent name='UNIVERSITY' options={options}/>
