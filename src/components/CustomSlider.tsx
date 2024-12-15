@@ -76,7 +76,7 @@ const CustomSlider = () => {
           <img
             key={index}
             src={image}
-            alt={`Slide ${index}`}
+            alt={`Image ${index}`}
             className="slide-image"
           />
         ))}
